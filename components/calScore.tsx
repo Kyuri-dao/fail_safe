@@ -93,7 +93,7 @@ export default function CalScore(){
     }
 
     return(
-        <div className={`flex flex-col md: m-4 justify-center items-center p-4 rounded-2xl border-4 ${borderCheck()}`}>
+        <div className={`flex flex-col justify-center items-center p-2 rounded-2xl border-4 ${borderCheck()}`}>
             <div className="flex flex-col p-2 justify-center items-center">
                 <p className="text-xl font-bold">配点</p>
                 <div className="p-2">

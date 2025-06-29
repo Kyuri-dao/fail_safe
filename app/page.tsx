@@ -17,20 +17,20 @@ export default function Home(){
   }
 
   return(
-    <div className="flex flex-col justify-center items-center gap-4">
+    <div className="flex flex-col justify-center items-center gap-2">
       <div>
           <p className={`${ubuntu.className} text-2xl p-4`}>Fail Safe | 赤点チェッカー</p>
           <Separator className="bg-black"/>
       </div>
       <p className="text-xl p-4">点数を入力...</p>
-      <div className="flex">
-        <Button onClick={addComp} variant={"outline"} className="m-2 transition hover:opacity-35">計算コンポーネントを増やす</Button>
-        <Button onClick={delComp} variant={"outline"} className="m-2 transition hover:opacity-35 text-red-500">計算コンポーネントを減らす</Button>
+      <div className="flex gap-4">
+        <Button onClick={addComp} variant={"outline"} className="transition hover:opacity-35">計算する科目を増やす</Button>
+        <Button onClick={delComp} variant={"outline"} className="transition hover:opacity-35 text-red-500">計算する科目を減らす</Button>
       </div>
       
         {comp.map((_, idx) => (
-          <div key={idx} className="w-fit">
-            <p className="text-lg font-bold w-fit px-4">科目 : {idx + 1}</p>
+          <div key={idx} className="w-full mb-4 px-3">
+            <p className="text-lg font-bold p-2">科目 : {idx + 1}</p>
             <CalScore />
           </div>
         ))}
