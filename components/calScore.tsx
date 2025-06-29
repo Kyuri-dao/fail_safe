@@ -1,7 +1,6 @@
 'use client'
 
 import { Input } from "./ui/input"
-import { z } from "zod";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import {
@@ -13,21 +12,6 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
-
-const formSchema = z.object({
-    firstScore: z.number().min(1, {
-        message: "User's test score must be at least 1 characters.",
-    }),
-    secondScore: z.number().min(1, {
-        message: "User's test score must be at least 1 characters.",
-    }),
-    thirdScore: z.number().min(1, {
-        message: "User's test score must be at least 1 characters.",
-    }),
-    fourthScore: z.number().min(1, {
-        message: "User's test score must be at least 1 characters.",
-    })
-})
 
 export default function CalScore(){
     const [ scores, setScores ] = useState({
@@ -68,10 +52,10 @@ export default function CalScore(){
 
     function handleGenCalc(){
         console.log("Pushed handleGenCalc");
-        handleCalc;
+        // handleCalc;
         console.log(scoringSys);
 
-        let reportNum = Number(report || 0);
+        const reportNum = Number(report || 0);
         switch(scoringSys){
             case "seven-three":
                 const finalSevenThree = (res || 0 ) * 0.7 + (reportNum || 0) * 0.3;
