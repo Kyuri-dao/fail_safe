@@ -5,16 +5,10 @@ import Link from "next/link"
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport
 } from "@/components/ui/navigation-menu"
-
-import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
   title: "Fail Safe|赤点チェッカー",

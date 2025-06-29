@@ -3,15 +3,6 @@
 import { Input } from "./ui/input"
 import { z } from "zod";
 import { Button } from "./ui/button";
-import {
-    Form,
-    FormControl,
-    FormDescription,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-} from "@/components/ui/form"
 import { useState } from "react";
 import {
     Select,
@@ -22,8 +13,6 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
-import { SelectItemProps } from "@radix-ui/react-select";
-import { number } from "zod/v4-mini";
 
 const formSchema = z.object({
     firstScore: z.number().min(1, {
