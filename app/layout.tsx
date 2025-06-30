@@ -53,9 +53,9 @@ export default function RootLayout({
         </main>
         <footer className="justify-end mt-auto w-full">
           <div className="flex h-fit bg-black">
-            <div className="flex flex-col p-4 px-8 items-start text-white">
-              <p className={`${ubuntu.className} text-[30px] text-center`}>Fail Safe</p>
-              <p className="text-[20px] text-center">赤点チェッカー</p>
+            <div className="flex flex-col p-4 px-8 justify-center items-start text-white">
+              <p className={`${ubuntu.className} text-[20px] text-center`}>Fail Safe</p>
+              <p className="text-[15px] text-center">赤点チェッカー</p>
             </div>
 
             <div className="flex flex-col p-4 px-8 ml-auto text-white justify-center">

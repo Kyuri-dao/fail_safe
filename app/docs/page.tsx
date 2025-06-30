@@ -21,7 +21,7 @@ export default function Docs(){
                 <DocsAcc />
             </div>
 
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center mb-4">
                 <p className="text-xl p-4">免責事項 | Discraimer</p>
                 <div className="flex w-3/4 gap-4">
                     <Alert variant={"destructive"}>

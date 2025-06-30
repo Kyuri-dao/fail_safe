@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ubuntu } from "@/utils/fonts";
 import { Separator } from "@/components/ui/separator";
-import { BsGithub } from "react-icons/bs"
-import { AiOutlineGlobal } from "react-icons/ai"
+import { BsGithub } from "react-icons/bs";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { FaFileWaveform } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function Repository(){
@@ -27,6 +28,14 @@ export default function Repository(){
                     <Button variant={"outline"} className="w-[250px]">
                         <AiOutlineGlobal size={50}/>
                         <p className="text-lg">Homepage</p>
+                    </Button>
+                </Link>
+
+                <p className="text-xl">報告フォーム</p>
+                <Link href={"https://forms.gle/u8s6CMNyT1EYZTb28"}>
+                    <Button variant={"outline"} className="w-[250px]">
+                        <FaFileWaveform size={50}/>
+                        <p className="text-lg">フォーム(Google Forms)</p>
                     </Button>
                 </Link>
             </div>
